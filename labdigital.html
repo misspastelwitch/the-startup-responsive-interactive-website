@@ -11,14 +11,14 @@
 
 <body>
 
-    <header>
+    <header  class="primary-background">
 
         <!-- Logo -->
-         <a href="index.html" aria-label="Home">
-             <img src="#" alt="logo Weird Cool Stuff">
+         <a class="logo secondary-background" href="index.html" aria-label="Home">
+             <img class="secondary-background" src="#" alt="logo Weird Cool Stuff">
          </a>
 
-         <div>
+         <div class="right">
             <div class="top-nav">
                 <p>Besteld voor 23:59, morgen in je toko</p>
                 <a href=""></a>
@@ -28,7 +28,7 @@
             
             <div class="btm-nav">
                   <nav class="navbar">
-                      <button>
+                      <button class="hamburger-btn secondary-background" id="menuButton">
                           <img src="" alt="hamburger menu">
                           <p>Onze categoriëen</p>
                       </button>
@@ -39,9 +39,31 @@
                           <li><a href="#"></a></li>
                           <li><a href="#"></a></li>
                       </ul>
+                      <div class="cagetory-items primary-background" id="menu">
+    
+                        <form action="#">
+                            <input type="text" placeholder="Search Courses" name="search">
+                        </form>
+                        <p>Onze categoriëen</p>
+                          <ul>
+                              <li><a href="#">Mokken</a></li>
+
+                          </ul>
+                          <div class="divider"></div>
+                          <div class="overige">
+                            <div class="sterren">
+                                <p>9.5 / 10</p>
+                                <img src="assets/4.5-sterren.svg" alt="">
+                            </div>
+                            
+                            <div class="divider-vertical"></div>
+                            <img src="assets/vlag-nederland.svg" alt="">
+                          </div>
+                          <p class="usp-besteld">Besteld voor 23:59, morgen in je toko</p>
+                      </div>
                   </nav>
 
-                  <form action="">
+                  <form action="#">
                     <input type="text" placeholder="Zoek een product..." name="search">
                   </form>
                    
@@ -57,10 +79,11 @@
 
     <!-- 1st Banner-->
     <section>
+
         <p>Nieuw!</p>
         <h1>Hele vreemde mokken</h1>
         <p>6.99</p>
-        <a href="#">Bekijk alle mokken</a>
+        <a class="btn-transparant" href="#">Bekijk alle mokken</a>
     </section>
 
     <ul class="orders">
@@ -330,7 +353,7 @@
                  <p>Krijg de beste deals en leuke informatie</p>
                  <form action="">
                      <input type="text" placeholder="Search Courses" name="search">
-                     <button>Aanmelden</button>
+                     <button  class="btn-verzenden">Aanmelden</button>
                  </form>
 
                  <section>
