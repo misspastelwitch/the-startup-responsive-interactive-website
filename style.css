@@ -246,6 +246,7 @@ nav {
     background-size: cover;
     padding: 2rem;
     border-radius: 10px;
+
 }
 
 .articles-heading {
@@ -276,6 +277,7 @@ nav {
     gap: 2rem;
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
 /* member section  */
 .member-section {
