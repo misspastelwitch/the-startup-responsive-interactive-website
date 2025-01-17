@@ -4,48 +4,34 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
+    @font-face {
+        font-family: 'American-Typewriter-Regular', 'Courier New', Courier, monospace;;
+        src: url(fonts/American\ Typewriter\ Regular.ttf);
+    }
 }
 html {
-    font-family: 'American-Typewriter-Regular', 'Courier New', Courier, monospace;
-    src: url('./fonts/american-typewriter-regular.ttf') format('truetype');
     overflow-x: hidden;
-    width: 100vw;
-    height: 100vh;
-    color: black;
+    display: flex;
+    flex-direction: column;
+
 }
 
-.bannerone {
-    max-width: 100%;
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    background-color: #facc15;
-    /* background-image: url("./images/image.png"); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
-}
-nav {
-    position: absolute;
-    top: 11%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 80%;
-    margin: 0 auto;
+    position: sticky;
+    top: 0%;
+    width: 90%;
     display: flex;
     height: 9rem;
-    border-bottom-left-radius: 1.25rem;
-    border-bottom-left-radius: 1.25rem;
+    border-radius: 1em 0em;
 }
 .cool-stuff {
     background-color: black;
     border-bottom-left-radius: 1.25rem;
     width: 10.75rem;
-    padding: 2rem 2rem;
+    padding: 1rem 1;
     line-height: 36px;
     display: flex;
     justify-content: center;
@@ -87,6 +73,7 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
 .categories-search {
     display: flex;
     gap: 0.5rem;
@@ -152,7 +139,16 @@ nav {
     position: relative;
 }
 
-
+.bannerone {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #facc15; 
+    position: relative;
+    overflow: hidden;
+}
 .bannerphoto {
     position: absolute;
     top: 35%;
@@ -222,12 +218,14 @@ nav {
 
 /* New products carousel  */
 .products {
-
+    margin: 1em 2em;
 }
 
 /* articles section  */
 
 .articles {
+    display: flex;
+    flex-direction: row;
     margin: 1em 2em;
     width: 30%;
     align-items: center;
