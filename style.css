@@ -458,73 +458,6 @@ button {
     cursor: pointer;
 }
 @media screen and (max-width: 1024px) {
-    nav {
-        max-width: 100%;
-        height: 14.5rem;
-        top: 0%;
-        left: 0;
-        right: 0;
-        transform: translate(0%, 0%);
-        border-bottom-left-radius: 0rem;
-    }
-    .cool-stuff {
-        width: 4rem;
-        padding: 1rem 0.5rem;
-        font-size: 1rem;
-        line-height: 20px;
-        border-bottom-left-radius: 0rem;
-    }
-    .navbar {
-        height: 14.5rem;
-        border-bottom-right-radius: 0rem;
-    }
-    .navbar-top {
-        flex-direction: column;
-        font-size: 0.5rem;
-        padding: 1rem;
-    }
-    .navbar-top-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    .ratings {
-        justify-content: center;
-        align-items: center;
-    }
-    .navbar-top {
-        height: 5rem;
-    }
-    .country {
-        display: none;
-    }
-    .navbar-bottom {
-        padding: 1rem;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .categories-search {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
-    .categories-button {
-        width: 50%;
-        padding: 0.5rem;
-        font-size: 10px;
-    }
-    .search-bar {
-        width: 100%;
-        padding: 0.7rem 0.5rem;
-        height: 2rem;
-    }
-    .nav-user-data {
-        margin-top: 8px;
-        align-items: center;
-        justify-content: center;
-    }
     .member-section {
         padding: 3rem 3rem;
     }
@@ -537,13 +470,6 @@ button {
         justify-content: space-between;
         padding: 0px 8px;
     }
-    .banner.desc {
-        font-size: 1rem;
-    }
-        .bannerone {
-            top: 50%;
-            left: 40%;
-        }
 }
 @media screen and (max-width: 600px) {
     
