@@ -283,10 +283,8 @@ nav {
 .member-section {
     position: relative;
     width: 100vw;
-    margin-left: calc(-50vw + 50%);
     background-color: #facc15;
-    height: 30vw;
-    padding: 10rem 15rem;
+    padding: 5rem 7rem;
 }
 .cool-member-tag {
     position: relative;
@@ -386,11 +384,13 @@ nav {
     gap: 4px;
     cursor: pointer;
 }
+
+/* footer */
 .footer-items {
-    margin-top: 5em;
-    margin-left: 14em;
+    margin-top: 2em;
+    margin-left: 20%;
     display: flex;
-    gap: 8rem;
+    gap: 10%;
 }
 .footer-item-list {
     margin-top: 10px;
@@ -457,7 +457,27 @@ nav {
 button {
     cursor: pointer;
 }
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .features {
+        padding: 10px 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    .features-list {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
+    .articles {
+        margin: 1em 2em;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
     .member-section {
         padding: 3rem 3rem;
     }
@@ -470,15 +490,38 @@ button {
         justify-content: space-between;
         padding: 0px 8px;
     }
+    .footer-items {
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 10%;
+        overflow-wrap: normal;
+    }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     
     .banner.desc {
         font-size: 1rem;
     }
-
+    .features {
+        padding: 10px 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
     .features-list {
+        list-style: none;
         font-size: 10px;
+        display: flex;
+        gap: 1rem;
+    }
+    .articles {
+        margin: 1em 2em;
+        width: 85%;
+        align-items: center;
+        justify-content: center;
     }
     .tips-inspiratie {
         flex-direction: column;
@@ -490,5 +533,5 @@ button {
     .footer-items {
         flex-direction: column;
         gap: 2rem;
-    }
+        margin-left: 20%;
 }
