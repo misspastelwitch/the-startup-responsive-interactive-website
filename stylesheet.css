@@ -50,20 +50,13 @@ body {
     }
 
     /* Fonts */
-    --font-header: "American-Typewriter-Bold", sans-serif;
-    --font-paragraph: 'American-Typewriter-Regular', sans-serif;
+    --font: "American-Typewriter-Regular", sans-serif;
 
     @font-face {
         font-family: 'American-Typewriter-Regular';
-        src: url(../fonts/american-typewriter-regular.ttf) format('truetype');
+        src: url(/assets/fonts/American-Typewriter-Regular.ttf) format('truetype');
         font-style: normal;
         font-weight: 500;
-    }
-    
-    @font-face {
-        font-family: 'American-Typewriter-Bold';
-        src: url(../fonts/american-typewriter-bold.ttf) format('truetype');
-        font-weight: 800;
     }
 
     /* decoration */
@@ -80,8 +73,6 @@ body {
 
 
 /* Heading elements */
-
-
 
 /* Forms */
 form {
@@ -181,6 +172,7 @@ a:hover {
     background-color: var(--secondary-background-color);
     color: var(--secondary-text-color);
     padding: 0.9em 1.9em;
+    transform: scale(0.9);
     border-radius: var(--big-rounded);
     text-decoration: none;
     gap: 0.5em;
@@ -193,6 +185,7 @@ a:hover {
     background-color: var(--primary-highlight-color);
     color: var(--primary-text-color);
     transition: ease-in-out 0.2s;
+    transform: scale(1.05);
 }
 
 /* invisible button */
@@ -218,18 +211,18 @@ a:hover {
 
 /* Width */
 .width-top-btm {
-    padding: 3.5em 1em 3.5em 1em;
+    padding: 3em 2em;
 
     @media screen and (min-width: 820px) {
-        padding: 4.5em 3em 4.5em 3em;
+        padding: 3.5em 3em;
     }
 
     @media screen and (min-width: 1120px) {
-        padding: 5em 7em 5em 7em;
+        padding: 1em 3em;
     }
 
      @media screen and (min-width: 1600px) {
-         padding: 4em 4em 4em 4em;
+         padding: 4em;
      }
 }
 
