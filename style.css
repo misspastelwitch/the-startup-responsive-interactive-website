@@ -211,15 +211,13 @@ nav {
     gap: 3rem;
 }
 /* categories carousel  */
-.categories {
-    align-items: center;
-    justify-content: center; 
-}
+
 
 /* New products carousel  */
 .products {
     margin: 1em 2em;
 }
+
 
 /* articles section  */
 
