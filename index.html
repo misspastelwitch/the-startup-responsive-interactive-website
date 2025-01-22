@@ -1,293 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Digital</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weird Cool Stuff - Lab Digital</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header class="primary-background">
+            <!-- Logo -->
+            <a class="logo secondary-background" href="index.html" aria-label="logo">
+                <img class="secondary-background" src="assets/icons/logo.png" alt="logo" />
+            </a>
 
-</head>
-<body>
-      <!-- Navbar--> 
+            <div class="right">
+                <div class="top-nav">
+                    <p class="check">Besteld voor 23:59, morgen in je toko</p>
 
-      <main>
-    <div class="bannerone">
-    <header>
-        <img src="./assets/banner.png" alt=""> 
-        <nav>
-            <div class="cool-stuff">
-                <img src="./assets/logo.png" alt=""> 
-            </div>
-            <div class="navbar">
-                <div class="navbar-top">
-                    <!-- add icon--> 
-                    <div class="navbar-top-text">
-                        <img src="./assets/check.png" alt="check"> 
-                        <p>Besteld voor 23:59, morgen in je toko</p>
+                    <div class="right">
+                        <a href="">Klantenservice</a>
+                        <p class="stars">9.5 / 10</p>
+                        <div class="divider-vertical"></div>
+                        <img src="assets/icons/nederlands.svg" alt="" />
                     </div>
-
-                    <div class="navbar-top-info">
-                        <p>Klantenservice</p>
-                    <!-- add icon--> 
-                        <div class="ratings">
-                            <p > 9.5/10 </p>
-                        </div>
-                    </div>
-                        
                 </div>
-                <div class="navbar-bottom">
-                    <div class="categories-search">
-                    <div class="categories-button">
-                        <!-- add icon-->
-                        <img src="./assets/menu.png" alt=""> 
-                         <p>Onze categorieën</p>                            
-                    </div>
-                    <div class="search-bar">
-                        <input type="text" placeholder="Waar ben je naar op zoek?" />
-                        <button type="submit" class="search-button">   
-                       <!-- add icon-->   <img src="./assets/icon.png" alt="magnifying glass">
+
+                <div class="btm-nav">
+                    <nav class="navbar">
+                        <button class="hamburger-btn secondary-background" id="hamburger">
+                            <img src="assets/icons/hamburger menu.svg" alt="hamburger menu" />
+                            <span>Onze categoriëen</span>
                         </button>
-                      </div>
-                </div>
 
-                <div class="nav-user-data">
-                    <div class="profile">
+                        <div class="cagetory-items primary-background" id="menu">
+                            <form action="#">
+                                <input type="text" placeholder="Waar ben je naar op zoek?" name="search" />
+                            </form>
+
+                            <p>Onze categoriëen</p>
+
+                            <ul>
+                                <li><a href="#">Nieuw binnen</a></li>
+                                <li><a href="#">Mode</a></li>
+                                <li><a href="#">Eten & Drinken</a></li>
+                                <li><a href="#">Tuin</a></li>
+                                <li><a href="#">Bad & Douche</a></li>
+                                <li><a href="#">Cadeau</a></li>
+                                <li><a href="#">Inspiratie</a></li>
+                                <li><a href="#">Keuken</a></li>
+                                <li><a href="#">Huis</a></li>
+                            </ul>
+
+                            <div class="divider"></div>
+
+                            <div class="overige">
+                                <div class="stars">
+                                    <p>9.5 / 10</p>
+                                    <img src="assets/icons/stars.svg" alt="" />
+                                </div>
+
+                                <div class="divider-vertical"></div>
+
+                                <img src="assets/icons/check.png" alt="" />
+                            </div>
+
+                            <p class="check">Besteld voor 23:59, morgen in je toko</p>
+                        </div>
+                    </nav>
+
+                    <form action="#">
+                        <input type="text" placeholder="Wat zoek je?" name="search" />
+                    </form>
+
+                    <ul class="links">
+                        <li class="user"><img src="./assets/icons/profile.svg" alt="" /><a href="#"></a></li>
+                        <li><img src="./assets/icons/svgexport-4.svg" alt="" /><a href="#"></a></li>
+                        <li><img class="card-icon" src="./assets/icons/cart.svg" alt="" /><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Banner sectie 1 -->
+        <section class="banner-home width-top-btm">
+            <div class="info">
+                <p class="label primary-highlight">NIEUW!</p>
+                <h1>Hele vreemde mokken</h1>
+                <p class="price"><span class="price-left">6.</span><span class="price-right">99</span></p>
+                <a class="btn-zwart" href="#">Bekijk alle mokken</a>
+            </div>
+        </section>
+
+        <!-- check mark promises -->
+        <ul class="check-orders width-top-btm">
+            <li class="check"><p>Besteld voor 23:59, morgen in je toko</p></li>
+            <li class="check"><p>Gratis verzending op bestellingen boven €41</p></li>
+            <li class="check"><p>Gratis retour</p></li>
+        </ul>
+
+        <!-- Divider -->
+        <div class="divider-check"></div>
+
+        <!-- Categories -->
+        <section class="width-btm">
+            <h2>Populaire Categorieën</h2>
+            <div class="carousel-wrapper-list">
+                <ul class="category-list">
+                    <li>
+                        <img src="./assets/categories/umbrella.png" alt="" />
+                        <h3>Nieuw binnen</h3>
+                    </li>
+                    <li>
+                        <img src="./assets/categories/spookyshirt.jpg" alt="" />
+                        <h3>Mode</h3>
+                    </li>
+                    <li>
+                        <img src="./assets/categories/borgir.jpg" alt="" />
+                        <h3>Eten & Drinken</h3>
+                    </li>
+                    <li>
+                        <img src="./assets/categories/shovel.png" alt="" />
+                        <h3>Tuin</h3>
+                    </li>
+                    <li>
+                        <img src="./assets/categories/perfume.png" alt="" />
+                        <h3>Bad & Douche</h3>
+                    </li>
+                    <li>
+                        <img src="./assets/categories/present.jpg" alt="" />
+                        <h3>Cadeau</h3>
+                    </li>
+                    <li>
+                        <img src="./assets/categories/dog.png" alt="" />
+                        <h3>Inspiratie</h3>
+                    </li>
+                    <li>
+                        <img src="./assets/categories/spoon.png" alt="" />
+                        <h3>Keuken</h3>
+                    </li>
+                    <li>
+                        <img src="./assets/categories/pillow.png" alt="" />
+                        <h3>Huis</h3>
+                    </li>
+                </ul>
+
+                <button class="primary-background" id="next"><img src="./assets/icons/totheright.svg" alt="" /></button>
+            </div>
+        </section>
+
+        <!-- New products  -->
+        <div class="product-sectie width-btm">
+            <section class="products-banner">
+                <h2>Nieuwe aparte products</h2>
+                <a href="#">Bekijk alles</a>
+            </section>
+
+            <div class="carousel-wrapper">
+                <ul class="products">
+                    <!-- Product 1 -->
+                    <li class="product">
+                        <div class="top">
+                            <img class="product-img" src="assets/categories/tooth.jpg" alt="" />
+                            <img class="favorite-icon" src="assets/icons/svgexport-4.svg" alt="icon favorite" />
+                        </div>
+                        <section class="btm">
+                            <h3>Tandenkaars</h3>
+                            <div class="info">
+                                <p class="price"><span class="price-left-small">6.</span><span class="price-right-small">99</span></p>
+                                <div class="knop-add-card">
+                                    <a href="#" class="btn-card">
+                                        <img class="plus-icon" src="./assets/icons/plus.svg" alt="" />
+                                        <img class="shop-icon" src="assets/icons/cart-1.svg" />
+                                    </a>
+                                    <p>Toevoegen aan winkelwagen</p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+
+                    <!-- Product 2 -->
+                    <li class="product">
+                        <div class="top">
+                            <img class="product-img" src="./assets/categories/brush.png" alt="" />
+                            <img class="favorite-icon" src="assets/icons/svgexport-4.svg" alt="icon favorite" />
+                        </div>
+
+                        <section class="btm">
+                            <h3>Kattenborstel</h3>
+                            <div class="info">
+                                <p class="price"><span class="price-left-small">3.</span><span class="price-right-small">49</span></p>
+                                <div class="knop-add-card">
+                                    <a href="#" class="btn-card">
+                                        <img class="plus-icon" src="./assets/icons/plus.svg" alt="" />
+                                        <img class="shop-icon" src="assets/icons/cart-1.svg" />
+                                    </a>
+                                    <p>Toevoegen aan winkelwagen</p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+
+                    <!-- Product 3 -->
+                    <li class="product">
+                        <div class="top">
+                            <img class="product-img" src="./assets/categories/shoes.png" alt="" />
+                            <img class="favorite-icon" src="assets/icons/svgexport-4.svg" alt="icon favorite" />
+                        </div>
+
+                        <section class="btm">
+                            <h3>Joker Pantoffels</h3>
+                            <div class="info">
+                                <p class="price"><span class="price-left-small">9.</span><span class="price-right-small">99</span></p>
+                                <div class="knop-add-card">
+                                    <a href="#" class="btn-card">
+                                        <img class="plus-icon" src="./assets/icons/plus.svg" alt="" />
+                                        <img class="shop-icon" src="assets/icons/cart-1.svg" />
+                                    </a>
+                                    <p>Toevoegen aan winkelwagen</p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+
+                    <!-- Product 4 -->
+                    <li class="product">
+                        <div class="top">
+                            <img class="product-img" src="./assets/categories/pearlamp.jpg" alt="" />
+                            <img class="favorite-icon" src="assets/icons/svgexport-4.svg" alt="icon favorite" />
+                        </div>
+
+                        <section class="btm">
+                            <h3>Perenlamp</h3>
+                            <div class="info">
+                                <p class="price"><span class="price-left-small">15.</span><span class="price-right-small">49</span></p>
+                                <div class="knop-add-card">
+                                    <a href="#" class="btn-card">
+                                        <img class="plus-icon" src="./assets/icons/plus.svg" alt="" />
+                                        <img class="shop-icon" src="assets/icons/cart-1.svg" />
+                                    </a>
+                                    <p>Toevoegen aan winkelwagen</p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+
+                    <!-- Product 5 -->
+                    <li class="product">
+                        <div class="top">
+                            <img class="product-img" src="./assets/categories/pan.jpg" alt="" />
+                            <img class="favorite-icon" src="assets/icons/svgexport-4.svg" alt="icon favorite" />
+                        </div>
+
+                        <section class="btm">
+                            <h3>Pangezicht</h3>
+                            <div class="info">
+                                <p class="price"><span class="price-left-small">21.</span><span class="price-right-small">99</span></p>
+                                <div class="knop-add-card">
+                                    <a href="#" class="btn-card">
+                                        <img class="plus-icon" src="./assets/icons/plus.svg" alt="" />
+                                        <img class="shop-icon" src="assets/icons/cart-1.svg" />
+                                    </a>
+                                    <p>Toevoegen aan winkelwagen</p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+
+                    <!-- Product 6 -->
+                    <li class="product">
+                        <div class="top">
+                            <img class="product-img" src="./assets/tanden-kaars.jpg" alt="" />
+                            <img class="favorite-icon" src="assets/icons/svgexport-4.svg" alt="icon favorite" />
+                        </div>
+
+                        <section class="btm">
+                            <h3>Tandenkaars</h3>
+                            <div class="info">
+                                <p class="price"><span class="price-left-small">6.</span><span class="price-right-small">99</span></p>
+                                <a href="#" class="btn-card">
+                                    <img class="plus-icon" src="./assets/icons/plus.svg" alt="" />
+                                    <img class="shop-icon" src="assets/icons/cart-1.svg" />
+                                </a>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="primary-background" id="next"><img src="./assets/icons/totheright.svg" alt="" /></button>
+        </div>
+
+        <!-- Banner Sectie 4 -->
+        <div class="banner-cards">
+            <img class="banner-cards-img" src="./assets/photos/juigend-persoon.jpg" alt="happy happy happy" />
+
+            <ul class="cards">
+                <!-- Kaart links -->
+                <li class="card-left secondary-highlight">
+                    <section class="left">
+                        <h2>Helemaal blitz tijdens de Après-ski</h2>
+                        <p>Maak je klaar om te schitteren op de piste én in de Après-ski!</p>
+                        <a class="btn-transparant" href="#">Shop nu!</a>
+                    </section>
+
+                    <div class="right">
+                        <img class="mobiel" src="./assets/photos/apresski.jpg" alt="woman wearing a ski suit" />
+                        <img class="desktop" src="./assets/photos/apresski.jpg" alt="woman wearing a ski suit" />
                     </div>
-                    <div class="wishlist">
-                    <!-- add icon-->
+                </li>
+
+                <!-- Kaart rechts -->
+                <li class="card-right secondary-highlight">
+                    <section class="left">
+                        <h2>Helemaal blitz tijdens de Après-ski</h2>
+                        <p>Maak je klaar om te schitteren op de piste én in de Après-ski!</p>
+                        <a class="btn-transparant" href="#">Shop nu!</a>
+                    </section>
+
+                    <div class="right">
+                        <img class="mobiel" src="./assets/photos/apresski.jpg" alt="woman wearing a ski suit" />
+                        <img class="desktop" src="./assets/photos/apresski.jpg" alt="woman wearing a ski suit" />
                     </div>
-                    <div class="cart">
-                        <!-- add icon--> 
-                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Nieuwe products Sectie 5 -->
+        <div class="news width-top-btm">
+            <section class="info">
+                <h2>Nieuwe aparte products</h2>
+                <a href="#">Bekijk alles</a>
+            </section>
+
+            <ul class="article">
+                <!-- Article 1 -->
+                <li class="article">
+                    <img class="banner" src="./assets/photos/2025-img.jpg" alt="2025 balloon" />
+                    <section class="btm secondary-background secondary-tekst">
+                        <h3>Leuke dingen voor het nieuwe jaar</h3>
+                        <p>Begin het nieuwe jaar goed met deze leuke ideeën en inspiratie om er een topjaar van te maken!</p>
+                        <a class="btn-news" href="#">Lees meer<img src="" alt="" /></a>
+                    </section>
+                </li>
+
+                <!-- Article 2 -->
+                <li class="article">
+                    <img class="banner" src="./assets/photos/dinosaur.jpg" alt="Dinosaur wearing a party hat" />
+                    <section class="btm secondary-background secondary-tekst">
+                        <h3>Leuke dingen voor het nieuwe jaar</h3>
+                        <p>Begin het nieuwe jaar goed met deze leuke ideeën en inspiratie om er een topjaar van te maken!</p>
+                        <a class="btn-news" href="#">Lees meer<img src="" alt="" /></a>
+                    </section>
+                </li>
+
+                <!-- Article 3 -->
+                <li class="article">
+                    <img class="banner" src="./assets/photos/bird.jpg" alt="A bird made out of food" />
+                    <section class="btm secondary-background secondary-tekst">
+                        <h3>Leuke dingen voor het nieuwe jaar</h3>
+                        <p>Begin het nieuwe jaar goed met deze leuke ideeën en inspiratie om er een topjaar van te maken!</p>
+                        <a class="btn-news" href="#">Lees meer<img src="" alt="" /></a>
+                    </section>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Wordt member Sectie 6 -->
+        <div class="member primary-highlight width-top-btm">
+            <!-- Links -->
+            <section class="left">
+                <h2>Word een member bij Weird Cool Stuff</h2>
+                <ul class="checklist">
+                    <li class="checklist-item"><p>Als eerste een kijkje in onze nieuwe collecties</p></li>
+                    <li class="checklist-item"><p>Uitnodiging voor onze exclusieve memberavond</p></li>
+                    <li class="checklist-item"><p>Leuke win-acties!</p></li>
+                </ul>
+                <button class="member-button">Word member!</button>
+            </section>
+
+            <!-- Rechts -->
+            <div class="right">
+                <img class="foto-1" src="./assets/photos/hahaphone.jpg" alt="woman laughing at her phone" />
+                <img class="foto-2" src="./assets/icons/logo.png" alt="Weird cool stuff member" />
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-items">
+                <div class="footer-item">
+                    <h4>Categorieën</h4>
+                    <ul class="footer-item-list">
+                        <li>Nieuw binnen</li>
+                        <li>Mode</li>
+                        <li>Eten & Drinken</li>
+                        <li>Tuin</li>
+                        <li>Bad & Douche</li>
+                        <li>Cadeau</li>
+                        <li>Inspiratie</li>
+                        <li>Keuken</li>
+                        <li>Huis</li>
+                        <li>Boeken</li>
+                    </ul>
                 </div>
+                <div class="footer-item">
+                    <h4>Service</h4>
+                    <ul class="footer-item-list">
+                        <li>Meest gestelde vragen</li>
+                        <li>Bezorgopties & levertijd</li>
+                        <li>Retourneren & ruilen</li>
+                        <li>Saldo cadeaukaart</li>
+                        <li>Geschenkpakketten</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h4>Over ons</h4>
+                    <ul class="footer-item-list">
+                        <li>Over ons</li>
+                        <li>Onze winkels</li>
+                        <li>Vacatures</li>
+                        <li>Duurzaamheid</li>
+                        <li>Bedrijfsgegevens</li>
+                        <li>Pers</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h4>De leukste en gekste newsbrief</h4>
+                    <ul class="footer-item-list">
+                        <li>Krijg de beste deals en leuke informatie</li>
+                        <div class="search-bar email">
+                            <input type="text" placeholder="stella@weirdcoolstuff.nl" />
+                        </div>
+                        <button class="footer-button">
+                            Aanmelden
+                        </button>
+
+                        <h3>Volg ons</h3>
+                        <div class="footer-icons">
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <img src="./assets/icons/x.png" alt="" />
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="./assets/icons/facebook.png" alt="" />
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <img src="./assets/icons/youtube.png" alt="" />
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="./assets/icons/instagram.png" alt="" />
+                            </a>
+                        </div>
+                    </ul>
                 </div>
             </div>
-        </nav>
-    </header>
-
-
-    <!-- Banner --> 
-    <div class="bannerphoto">
-        <div class="new">
-            NIEUW!
-        </div>
-            <p class="banner">Hele vreemde mokken</p>
-            <p class="banner">6.<sup>99</sup></p>
-            <button class="bannerbutton">
-                Bekijk alle mokken
-            </button>
-            
-    </div>
-</div>
-<div class="features">
-    <ul class="features-list">
-        <li>
-            <div class="navbar-top-text">
-                
-                 <img src="./assets/check.png" alt="check">
-                    <p> Besteld voor 23:59, morgen in je toko</p>
+            <div class="payment-gateways">
+                <div>
+                    <img src="./assets/icons/klarna.png" alt="klarna" />
                 </div>
-        </li>
-        <li>
-            <div class="navbar-top-text">
-                <!-- add icon--> <img src="./assets/check.png" alt="check">
-                    <p>Gratis verzending op bestellingen boven €41</p>
+                <div>
+                    <img src="./assets/icons/mastercard.png" alt="mastercard" />
                 </div>
-            </li>
-            <li>
-            <div class="navbar-top-text">
-                <!-- add icon--> <img src="./assets/check.png" alt="check">
-                    <p>Gratis retour</p>
+                <div>
+                    <img src="./assets/icons/visa.png" alt="visa" />
                 </div>
-            </li>
-    </ul>
-</div>
-
-<!-- Categories Carousel  -->
-<section class="categories">
-<h2>Populaire categorieën</h2>
-</section>
-
-<!-- New products carousel  -->
-<section class="products">
-<h2>Nieuwe aparte producten</h2>
-</section>
-<!-- articles -->
-<section class="articles">
-
-    <div class="articles-desc">
-        <div class="articles-item">
-            <h3 class="articles-heading">Helemaal blitz tijdens de Après-ski</h3>
-            <p class="articles-description">Maak je klaar om te schitteren op de piste én in de Après-ski! </p>
-            <button class="articles-button">Shop nu!</button>
-        </div>
-        <div class="articles-item">
-            <h3 class="articles-heading">Helemaal blitz tijdens de Après-ski</h3>
-            <p class="articles-description">Maak je klaar om te schitteren op de piste én in de Après-ski! </p>
-            <button class="articles-button">Shop nu!</button>
-        </div>
-    </div>
-</section>
-
-
-<section class="tips">
-    <h2>Tips & inspiratie</h2>
-    <div class="tips-image"></div>
-    <div class="tips-inspiratie">
-        <div class="inspiratie">
-            <div>
-            <h2 class="inspiratie-heading">Leuke dingen voor het nieuwe jaar</h2>
-            <p class="inspiratie-text">"Begin het nieuwe jaar goed met deze leuke ideeën en inspiratie om er een topjaar van te maken!
+                <div>
+                    <img src="./assets/icons/paypal.png" alt="paypal" />
+                </div>
+                <div>
+                    <img src="./assets/icons/giropay.png" alt="giropay" />
+                </div>
+                <div>
+                    <img src="./assets/icons/visa.png" alt="visa" />
+                </div>
+                <div>
+                    <img src="./assets/icons/ideal.png" alt="ideal" />
+                </div>
             </div>
-            <button class="inspiratie-button">
-                    <p>Lees meer</p>
-                        
-            </button>
-        </div>
-        <div class="inspiratie">
-            <div>
-            <h2 class="inspiratie-heading">Leuke dingen voor het nieuwe jaar</h2>
-            <p class="inspiratie-text">"Begin het nieuwe jaar goed met deze leuke ideeën en inspiratie om er een topjaar van te maken!
+            <div class="privacy">
+                <p>Terms & Conditions</p>
+                <p>Privacy Statement</p>
+                <p>Cookies</p>
+                <p>© 2024 - Weird Cool Stuff</p>
             </div>
-            <button class="inspiratie-button">
-                    <p>Lees meer</p>
-                        
-            </button>
-        </div>
-        <div class="inspiratie">
-            <div>
-            <h2 class="inspiratie-heading">Leuke dingen voor het nieuwe jaar</h2>
-            <p class="inspiratie-text">"Begin het nieuwe jaar goed met deze leuke ideeën en inspiratie om er een topjaar van te maken!
-            </div>
-            <button class="inspiratie-button">
-                    <p>Lees meer</p>
-                        
-            </button>
-        </div>
-    </div>
-</section>
-
-<section class="member-section">
-    <div>
-        <h2>Word een member bij Weird Cool Stuff</h2>
-        <ul class="member-benefits-list">
-            <li>
-            <p>Als eerste een kijkje in onze nieuwe collecties</p>
-            </li>
-            <li>
-            <p>Uitnodiging voor onze exclusieve memberavond</p>
-            </li>
-            <li>
-             <p>Leuke win-acties!</p>      
-            </li>
-        </ul>
-        <div class="memberanimation">
-        <button class="member-button">Word member!</button>
-    </div>
-    </div>
-</section>
-<footer>
-    <div class="footer-items">
-    <div class="footer-item">
-        <h4>Categorieën</h4>
-        <ul class="footer-item-list">
-            <li>Nieuw binnen</li>
-            <li>Mode</li>
-            <li>Eten & Drinken</li>
-            <li>Tuin</li>
-            <li>Bad & Douche</li>
-            <li>Cadeau</li>
-            <li>Inspiratie</li>
-            <li>Keuken </li>
-            <li>Huis</li>
-            <li>Boeken</li>
-        </ul>
-    </div>
-    <div class="footer-item">
-        <h4>Service</h4>
-        <ul class="footer-item-list">
-            <li>Meest gestelde vragen</li>
-            <li>Bezorgopties & levertijd</li>
-            <li>Retourneren & ruilen</li>
-            <li>Saldo cadeaukaart</li>
-            <li>Geschenkpakketten</li>
-        </ul>
-    </div>
-    <div class="footer-item">
-        <h4>Over ons</h4>
-        <ul class="footer-item-list">
-            <li>Over ons</li>
-            <li>Onze winkels</li>
-            <li>Vacatures</li>
-            <li>Duurzaamheid</li>
-            <li>Bedrijfsgegevens</li>
-            <li>Pers</li>
-        </ul>
-    </div>
-    <div class="footer-item">
-        <h4>De leukste en gekste nieuwsbrief</h4>
-        <ul class="footer-item-list">
-            <li>Krijg de beste deals en leuke informatie</li>
-            <div class="search-bar email">
-                <button type="submit" class="search-button">
-      
-                </button>
-                        <input type="text" placeholder="Email" />
-                       
-                      </div>
-                      <button class="footer-button">
-                        Aanmelden
-                      </button>
-                <h3>Volg ons</h3>
-                <div class="footer-icons">
-                    <a href="https://www.twitter.com/" target="_blank">
-                        <img src="./assets/x.png" alt="">
-                    </a>
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <img src="./assets/facebook.png" alt="">
-                    </a>
-                    <a href="https://www.youtube.com/" target="_blank">
-                        <img src="./assets/youtube.png" alt="">
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="./assets/instagram.png" alt="">
-                    </a>
-                </div>
-        </ul>
-    </div>
-    
-</div>
-<div class="payment-gateways">
-    <div>
-        <img src="./assets/icons/klarna.png" alt="klarna">
-    </div>
-    <div>
-        <img src="./assets/icons/mastercard.png" alt="mastercard">
-    </div>
-    <div>
-        <img src="./assets/icons/visa.png" alt="visa">
-    </div>
-    <div>
-        <img src="./assets/icons/paypal.png" alt="paypal">
-    </div>
-    <div>
-        <img src="./assets/icons/giropay.png" alt="giropay">
-    </div>
-    <div>
-        <img src="./assets/icons/visa.png" alt="visa">
-    </div>
-    <div>
-        <img src="./assets/icons/ideal.png" alt="ideal">
-    </div>
-</div>
-<div class="privacy">
-    <p>Terms & Conditions</p>
-    <p>Privacy Statement</p>
-    <p>Cookies</p>
-    <p>© 2024 - Weird Cool Stuff</p>
-</div>
-</footer>
-</main>
-</body>
+        </footer>
+    </body>
 </html>
