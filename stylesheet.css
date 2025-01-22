@@ -3,6 +3,13 @@
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'American-Typewriter-Regular';
+    src: url('/assets/fonts/American-Typewriter-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
 body {
     /* Colours */
 
@@ -38,11 +45,7 @@ body {
         color: var(--secondary-text-color);
     }
 
-    /* Error & check */
-    --error-color: #d55555;
-.error-red {
-    background-color: var(--secondary-text-color);
-}
+    /* check marks */
 
     --error-color: #61cb88;
     .check-green {
@@ -52,12 +55,7 @@ body {
     /* Fonts */
     --font: "American-Typewriter-Regular", sans-serif;
 
-    @font-face {
-        font-family: 'American-Typewriter-Regular';
-        src: url(/assets/fonts/American-Typewriter-Regular.ttf) format('truetype');
-        font-style: normal;
-        font-weight: 500;
-    }
+font-family: American-Typewriter-Regular, sans-serif;
 
     /* decoration */
 
