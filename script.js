@@ -10,7 +10,7 @@ menuButton.addEventListener("click", () => {
 console.log("first 10 lines run smoothly");
 // Carousel
 
-let slidesContainer = document.querySelector('.producten'); 
+let slidesContainer = document.querySelector('.products'); 
 let slides = document.querySelectorAll('.product'); 
 let nextButton = document.querySelector('#next'); 
 
