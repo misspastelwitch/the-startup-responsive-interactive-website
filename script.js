@@ -24,7 +24,7 @@ function updateCarousel() {
 }
 console.log("first 15 lines run smoothly");
 
-document.querySelector('#next').addEventListener('click'); {   // select next button and add click function
+document.querySelector('#next').addEventListener('click, () => {   // select next button and add click function
   if (currentSlide < slides.length - 1) {  
     currentSlide++; 
     updateCarousel();  
